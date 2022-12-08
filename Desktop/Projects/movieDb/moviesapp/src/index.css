@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  /* background: rgb(55, 55, 88); */
+  /* background: url('https://wallpaper.dog/large/20493435.jpg') top/100%; */
+  background-color: black;
+  color: rgb(192, 192, 192);
+}
+
+/* #root{
+    width: 90%;
+    
+    background: rgb(55, 55, 88);
+    border: 0.1px solid rgb(114, 114, 114);
+    
+} */
+.popMovies::-webkit-scrollbar {
+  display: none;
+}
+
+.Popular {
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background: black;
+}
+
+.Popular h3 {
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+.popMovies {
+  width: 100%;
+
+  overflow-x: scroll;
+  scrollbar-width: none;
+  display: flex;
+  align-items: center;
+
+  flex-direction: row;
+  padding: 10px 0;
+}
+
+.moviesList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(44, 44, 44);
+  border: 1px solid rgb(70, 70, 70);
+}
+
+/* .popular{
+    background: black;
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900");
+
+.searchForm {
+  width: 100%;
+  padding: 20px 50px;
+  background: rgb(44, 44, 44);
+  border: 1px solid rgb(70, 70, 70);
+}
+
+.searchInput {
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  color: #ff8b88;
+
+  text-align: start;
+
+  width: 300px;
+  padding: 12px 24px;
+
+  transition: transform 250ms ease-in-out;
+  font-size: 14px;
+  line-height: 18px;
+
+  background-color: transparent;
+
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 95% center;
+  border-radius: 50px;
+  border: 1px solid #575756;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+
+  color: color(#575756 a(0.8));
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.searchInput:hover {
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #575756;
+  border-radius: 0;
+  background-position: 100% center;
+}
+
+.searchInput:focus {
+  padding: 12px 0;
+  outline: 0;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #575756;
+  border-radius: 0;
+  background-position: 100% center;
+}
+
+.Home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.LoginPage {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  background: rgb(44, 44, 44);
+  flex-direction: column;
+}
+
+@media (max-width: 890px) {
+  .burger,
+  .toogleMenu {
+    display: block !important;
+  }
+  .Header {
+    padding: 10px 20px;
+  }
+  .menu {
+    justify-content: start !important;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: rgb(44, 44, 44);
+    width: 250px;
+    height: 100%;
+    margin: 0 !important;
+    padding-top: 65px;
+  }
+  .menu a,
+  .menu a:hover {
+    width: 100%;
+    padding: 30px !important;
+    font-size: 22px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+  }
+  .Footer {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .detailsPoster img {
+    max-width: 300px;
+  }
+  .imgAndOverview img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 598px) {
+  .shortInfo h5 {
+    font-size: 20px;
+  }
+
+  .shortInfo p {
+    font-size: 17px !important;
+  }
+
+  .Popular h3 {
+    font-size: 15px;
+    margin: 0;
+  }
+  .Card {
+    min-width: 110px !important;
+    width: 110px !important;
+    height: 220px !important;
+  }
+
+  .defCard img {
+    width: 120px;
+  }
+
+  .Card p {
+    font-size: 12px;
+  }
+
+  .Header {
+    padding: 5px 10px !important;
+  }
+
+  .Header a {
+    font-size: 18px;
+  }
+
+  .menu a {
+    font-size: 15px;
+  }
+
+  .searchInput {
+    font-size: 10px;
+    padding: 10px;
+    width: 200px;
+    line-height: 13px;
+    background-size: 15px 15px;
+  }
+  .filterDiv select {
+    width: 135px;
+    font-size: 10px;
+  }
+
+  .detailsPoster img {
+    max-width: 250px;
+  }
+  .imgAndOverview img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 523px) {
+  .detailsPoster img {
+    max-width: 200px;
+  }
+  .imgAndOverview img {
+    max-width: 200px;
+  }
+  .shortInfo h5 {
+    font-size: 17px;
+  }
+
+  .shortInfo p {
+    font-size: 15px !important;
+  }
+  .fa-regular,
+  .fa-heart {
+    font-size: 20px !important;
+  }
+  .rec h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 432px) {
+  .detailsPoster img {
+    max-width: 150px;
+  }
+  .imgAndOverview img {
+    max-width: 250px;
+  }
+  .imgAndOverview {
+    flex-direction: column;
+  }
+  .shortInfo h5 {
+    font-size: 16px;
+  }
+
+  .shortInfo p {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 365) {
+  .detailsPoster img {
+    max-width: 120px;
+  }
+  .imgAndOverview img {
+    max-width: 250px;
+  }
+  .imgAndOverview {
+    flex-direction: column;
+  }
+  .shortInfo h5 {
+    font-size: 14px;
+  }
+
+  .shortInfo p {
+    font-size: 12px !important;
+  }
+  .shortInfo {
+    margin-left: 20px;
+  }
+}

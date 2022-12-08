@@ -1,0 +1,42 @@
+.details {
+  padding: 20px;
+  background: rgb(44, 44, 44);
+  border: 1px solid rgb(70, 70, 70);
+}
+
+.detailsContainer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.shortInfo {
+  font-size: 35px;
+  margin-left: 40px;
+}
+
+.shortInfo p {
+  font-size: 24px;
+}
+
+.fa-regular,
+.fa-heart {
+  font-size: 30px;
+  cursor: pointer;
+}
+.detailsPoster img {
+  width: 400px;
+}
+
+.imgAndOverview {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.imgAndOverview img {
+  margin-right: 30px;
+}
+
+.imgAndOverview p {
+  max-width: 400px;
+}

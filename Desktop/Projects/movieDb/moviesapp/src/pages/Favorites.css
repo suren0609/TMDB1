@@ -1,0 +1,21 @@
+.Favorites {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.favoriteList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background: rgb(44, 44, 44);
+  border: 1px solid rgb(70, 70, 70);
+}
+
+.favoriteList p {
+  width: 100%;
+  text-align: center;
+}

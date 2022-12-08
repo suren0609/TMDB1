@@ -1,0 +1,11 @@
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(44, 44, 44);
+  border: 1px solid rgb(70, 70, 70);
+  margin: 5px 0;
+  padding: 0 10px;
+  color: rgb(192, 192, 192);
+  letter-spacing: 1.5px;
+}

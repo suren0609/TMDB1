@@ -1,0 +1,23 @@
+select {
+  background: rgb(41, 41, 41);
+  outline: none;
+  border: 1px solid grey;
+  color: white;
+  width: 200px;
+  padding: 5px;
+}
+
+.filter-container {
+  padding: 10px 40px;
+  border: 1px solid rgb(70, 70, 70);
+  background: rgb(44, 44, 44);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.filterDiv {
+  margin: 5px;
+}
