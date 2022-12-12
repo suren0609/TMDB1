@@ -6,7 +6,14 @@ import { useState, useEffect } from "react";
 import "./MovieDetails.css";
 import Card from "../components/Card";
 
-const MovieDetails = ({ addToFavorites, favorites }) => {
+const MovieDetails = ({
+  addToFavorites,
+  favorites,
+  slide,
+  scrl,
+  scrolEnd,
+  scrollX,
+}) => {
   const [movie, setMovie] = useState({});
   const { id } = useParams();
   const isF = favorites.find((el) => el.id === movie.id);
@@ -63,10 +70,23 @@ const MovieDetails = ({ addToFavorites, favorites }) => {
       {rec.length ? (
         <div className="rec">
           <h3>Recommendations</h3>
-          <div className="popMovies">
-            {rec.map((movie) => (
-              <Card key={movie.id} movie={movie} />
-            ))}
+
+          <div className="scrollWin">
+            {scrollX !== 0 && (
+              <button className="prev" onClick={() => slide(-400)}>
+                <i className="fa fa-angle-left"></i>
+              </button>
+            )}
+            <div className="popMovies" ref={scrl}>
+              {rec.map((movie) => (
+                <Card key={movie.id} movie={movie} />
+              ))}
+            </div>
+            {!scrolEnd && (
+              <button className="next" onClick={() => slide(+400)}>
+                <i className="fa fa-angle-right"></i>
+              </button>
+            )}
           </div>
         </div>
       ) : (
