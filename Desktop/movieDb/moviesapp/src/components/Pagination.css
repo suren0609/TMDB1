@@ -1,0 +1,30 @@
+.Pagination{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.paginations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    background: rgb(44, 44, 44);
+    border: 1px solid rgb(70, 70, 70);
+}
+
+.pageItem{
+    list-style: none;
+    color: rgb(192, 192, 192);
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid rgb(70, 70, 70);
+    margin: 0 10px;
+    border-radius: 2px;
+}
+
+.pageItem:hover{
+    color: rgb(70, 70, 70);
+}

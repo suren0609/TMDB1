@@ -18,7 +18,10 @@ const Card = ({ movie }) => {
           </p>
         </div>
       </div>
-      <p>{movie.title}</p>
+      <p>
+        {movie.title.slice(0, 16)}
+        {movie.title.length > 16 ? "..." : null}
+      </p>
     </Link>
   );
 };

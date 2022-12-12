@@ -33,14 +33,32 @@ body {
   text-transform: uppercase;
   padding: 0 10px;
 }
+
+.scrollWin{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prev, .next{
+  background: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.fa{
+  color: wheat;
+  font-size: 30px;
+}
 .popMovies {
   width: 100%;
-
   overflow-x: scroll;
   scrollbar-width: none;
   display: flex;
   align-items: center;
-
+  scroll-behavior: smooth;
   flex-direction: row;
   padding: 10px 0;
 }
@@ -156,6 +174,8 @@ body {
     padding-top: 65px;
   }
   .menu a,
+  .logout,
+  .logout:hover,
   .menu a:hover {
     width: 100%;
     padding: 30px !important;
@@ -232,6 +252,12 @@ body {
   }
   .imgAndOverview img {
     max-width: 250px;
+  }
+  .paginations{
+    padding: 5px !important;
+  }
+  .pageItem{
+    font-size: 12px;
   }
 }
 

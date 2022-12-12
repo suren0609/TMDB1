@@ -3,13 +3,13 @@ import { NavLink as Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import "./Header.css";
 
-const Menu = () => {
+const Menu = ({ setMenuActive }) => {
   const navigate = useNavigate();
   const { user } = useAuth();
   const { signout } = useAuth();
 
   return (
-    <div className="menu">
+    <div className="menu" onClick={() => setMenuActive(false)}>
       <Link to="/">Home</Link>
       <Link to="/movies">Movies</Link>
       <Link to="/favorites">Favorites</Link>
@@ -18,7 +18,10 @@ const Menu = () => {
           Log in
         </Link>
       ) : (
-        <button onClick={() => signout(navigate("/", { replace: true }))}>
+        <button
+          className="logout"
+          onClick={() => signout(navigate("/", { replace: true }))}
+        >
           Log Out
         </button>
       )}
